@@ -28,11 +28,11 @@ nav{
 
 nav ul{
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 nav ul a{
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: sans-serif;
@@ -46,7 +46,7 @@ nav ul a:hover {
 }
 
 nav img{
-    width: 100px;
+    width: 80px;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ nav img{
     border: 1px solid;
     color: black;  
     width: 90%;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .areyoureadyforround2 h1{
@@ -66,22 +66,13 @@ nav img{
     text-align: center;
     font-size: 16px;
     max-width: 500px;
+    font-weight: 600px;
     margin: 0 auto;
     color: black;
 }
 
-#about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    color: white;
-    padding: 20px;
-}
-
 .greatcommanders{
-    max-width: 500px;
-    text-align: center;
+    max-width: 400px;
 }
 
 .greatcommanders h1{
@@ -90,58 +81,54 @@ nav img{
 }
 
 .greatcommanders p {
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: 'inter';
 }
 
 #about img{
-    max-width: 500px;
-    max-height: 500px;
-    height: auto;
-    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    height: 400px;
 }
 
-@media (max-width: 768px) {
-    #WellHelloAgain{
-        padding: 20px;
-    }
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    background-color: black;
+}
 
+@media only screen and (min-width: 600px) {
     nav ul{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #fff;
+        gap: 40px;
     }
-
-    nav ul li{
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 1px solid #ccc;
+    nav ul a{
+        font-size: 20px;
     }
-
     nav img{
-        width: 80px;
+        width: 100px;
     }
-
+    .areyoureadyforround2{
+        margin: 200px auto;
+    }
     .areyoureadyforround2 h1{
-        font-size: 40px;
+        font-size: 80px;
     }
-
     .areyoureadyforround2 p {
-        font-size: 14px;
+        font-size: 24px;
+        max-width: 700px;
     }
-
+    .greatcommanders{
+        max-width: 600px;
+    }
     .greatcommanders h1{
-        font-size: 30px;
+        font-size: 75px;
     }
-
     .greatcommanders p {
-        font-size: 14px;
+        margin-top: 30px;
     }
-}
-
+    #about img{
+        max-width: 600px;
+        max-height:
